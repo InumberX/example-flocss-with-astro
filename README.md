@@ -1,1 +1,1 @@
-# example-flocss-with-astro
+# Example FLOCSS with astro
