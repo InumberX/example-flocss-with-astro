@@ -1,0 +1,12 @@
+/* clearfix */
+.u-clearfix {
+  display: block;
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+  }
+  &:after {
+    clear: both;
+  }
+}

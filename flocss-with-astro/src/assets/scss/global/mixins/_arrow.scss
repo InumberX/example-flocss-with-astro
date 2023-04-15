@@ -1,0 +1,16 @@
+@use '../variables' as *;
+
+// Arrow
+@mixin mxArrowLine($width-and-height, $border-width, $border-color, $deg) {
+  content: '';
+  display: block;
+  width: $width-and-height;
+  height: $width-and-height;
+  border-left: $border-width solid $border-color;
+  border-bottom: $border-width solid $border-color;
+  @if ($deg != '') {
+    transform: rotate($deg);
+  }
+  transition: 0.3s border-color, 0.3s transform;
+  @content;
+}
