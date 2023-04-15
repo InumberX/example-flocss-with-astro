@@ -1,0 +1,11 @@
+@use '../global' as *;
+
+.l-header {
+  border-bottom: 1px solid $color-palette-black;
+}
+
+.l-header__text {
+  text-align: center;
+  @include mxGetFontSize(16);
+  padding: 24px 0;
+}

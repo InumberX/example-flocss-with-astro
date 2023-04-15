@@ -1,0 +1,12 @@
+@use '../../../global' as *;
+
+.c-page-title {
+  padding: 24px 0;
+  color: $color-palette-white;
+  background-color: $color-palette-black;
+}
+
+.c-page-title__text {
+  @include mxGetFontSize(40);
+  font-weight: $font-bold;
+}
