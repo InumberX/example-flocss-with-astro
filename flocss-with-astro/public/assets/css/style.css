@@ -1,0 +1,310 @@
+@charset "UTF-8";
+/* 共通 ========== */
+/* リセット */
+* {
+  box-sizing: border-box;
+}
+*:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  line-height: 1;
+  background: #fff;
+  color: #000;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 1.6;
+  overflow-y: auto;
+  -webkit-text-size-adjust: 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "游ゴシック Medium", "Yu Gothic", YuGothic, YuGothicMedium, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+body.Body--fixed {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+include,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary,
+figure {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+p,
+blockquote,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  -webkit-overflow-wrap: break-word;
+  overflow-wrap: break-word;
+  -webkit-word-wrap: break-word;
+  word-wrap: break-word;
+  font-size: 1rem;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+figcaption,
+span {
+  -webkit-overflow-wrap: break-word;
+  overflow-wrap: break-word;
+  -webkit-word-wrap: break-word;
+  word-wrap: break-word;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s color, 0.3s opacity, 0.3s background-color, 0.3s border-color;
+}
+a:link, a:visited {
+  color: #000;
+  text-decoration: none;
+}
+@media (hover: hover) {
+  a:hover, a:active {
+    color: #000;
+    text-decoration: none;
+  }
+}
+
+button {
+  cursor: pointer;
+  font-family: "游ゴシック Medium", "Yu Gothic", YuGothic, YuGothicMedium, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+i,
+em,
+address {
+  font-style: normal;
+}
+
+b,
+strong,
+em {
+  font-weight: 700;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #fff;
+  color: #000;
+}
+
+small {
+  font-size: 100%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+  vertical-align: top;
+  -ms-interpolation-mode: bicubic;
+  max-width: 100%;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+pre {
+  overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: "游ゴシック Medium", "Yu Gothic", YuGothic, YuGothicMedium, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-size: 0.625rem;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+@media screen and (min-width: 576px), print {
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  dl,
+  dt,
+  dd,
+  p,
+  blockquote,
+  ul,
+  ol,
+  li {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+/* clearfix */
+.u-clearfix {
+  display: block;
+}
+.u-clearfix:before, .u-clearfix:after {
+  content: "";
+  display: block;
+}
+.u-clearfix:after {
+  clear: both;
+}
+
+/* obj */
+.u-obj-sm:not(:root) {
+  display: none;
+}
+
+.u-obj-md:not(:root) {
+  display: none;
+}
+
+.u-obj-lg:not(:root) {
+  display: none;
+}
+
+.u-obj-xl:not(:root) {
+  display: none;
+}
+
+.u-obj-xs:not(:root) {
+  display: block;
+}
+
+@media screen and (min-width: 321px), print {
+  .u-obj-xs:not(:root) {
+    display: none;
+  }
+  .u-obj-sm:not(:root) {
+    display: block;
+  }
+}
+@media screen and (min-width: 576px), print {
+  .u-obj-sm:not(:root) {
+    display: none;
+  }
+  .u-obj-md:not(:root) {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px), print {
+  .u-obj-md:not(:root) {
+    display: none;
+  }
+  .u-obj-lg:not(:root) {
+    display: block;
+  }
+}
+@media screen and (min-width: 992px), print {
+  .u-obj-lg:not(:root) {
+    display: none;
+  }
+  .u-obj-xl:not(:root) {
+    display: block;
+  }
+}

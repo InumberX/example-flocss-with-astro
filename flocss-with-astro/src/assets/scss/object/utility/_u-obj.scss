@@ -1,0 +1,50 @@
+@use '../../global/index' as *;
+
+/* obj */
+.u-obj-sm:not(:root) {
+  display: none;
+}
+.u-obj-md:not(:root) {
+  display: none;
+}
+.u-obj-lg:not(:root) {
+  display: none;
+}
+.u-obj-xl:not(:root) {
+  display: none;
+}
+.u-obj-xs:not(:root) {
+  display: block;
+}
+@include mxMediaQueryXs {
+  .u-obj-xs:not(:root) {
+    display: none;
+  }
+  .u-obj-sm:not(:root) {
+    display: block;
+  }
+}
+@include mxMediaQuerySm {
+  .u-obj-sm:not(:root) {
+    display: none;
+  }
+  .u-obj-md:not(:root) {
+    display: block;
+  }
+}
+@include mxMediaQueryMd {
+  .u-obj-md:not(:root) {
+    display: none;
+  }
+  .u-obj-lg:not(:root) {
+    display: block;
+  }
+}
+@include mxMediaQueryLg {
+  .u-obj-lg:not(:root) {
+    display: none;
+  }
+  .u-obj-xl:not(:root) {
+    display: block;
+  }
+}

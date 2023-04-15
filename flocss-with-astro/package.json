@@ -1,0 +1,26 @@
+{
+  "name": "flocss-with-astro",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "sass:dev": "sass src/assets/scss:public/assets/css src/assets/css:public/assets/css --no-source-map --style expanded"
+  },
+  "dependencies": {
+    "astro": "^2.2.3"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "printWidth": 120
+  },
+  "devDependencies": {
+    "sass": "^1.62.0"
+  }
+}
