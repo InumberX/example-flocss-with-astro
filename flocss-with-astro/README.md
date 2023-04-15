@@ -1,4 +1,4 @@
-# Static Site Generator with Docker React
+# Static Site Generator with Docker astro
 
 ## Development with Docker
 

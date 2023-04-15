@@ -1,3 +1,3 @@
 # Example FLOCSS with astro
 
-- [README](./README.md)
+- [README](./flocss-with-astro/README.md)

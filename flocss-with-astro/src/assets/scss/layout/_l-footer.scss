@@ -1,0 +1,13 @@
+@use '../global' as *;
+
+.l-footer {
+  background-color: $color-palette-black;
+  padding: 24px 0;
+  margin-top: auto;
+}
+
+.l-footer__text {
+  text-align: center;
+  color: $color-palette-white;
+  @include mxGetFontSize(12);
+}

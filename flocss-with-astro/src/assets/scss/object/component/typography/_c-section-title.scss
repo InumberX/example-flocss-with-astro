@@ -1,0 +1,10 @@
+@use '../../../global' as *;
+
+.c-section-title {
+  padding: 24px 0;
+}
+
+.c-section-title__text {
+  text-align: center;
+  @include mxGetFontSize(24);
+}

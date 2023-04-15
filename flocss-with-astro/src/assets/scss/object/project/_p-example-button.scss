@@ -1,0 +1,11 @@
+@use '../../global' as *;
+
+.p-example-button-example {
+  margin-top: 40px;
+}
+
+.p-example-button-example__contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
