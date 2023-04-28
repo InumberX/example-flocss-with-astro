@@ -1,0 +1,15 @@
+@use '../../../../global' as *;
+
+.p-home-button-example {
+  margin-top: 40px;
+}
+
+.p-home-button-example__contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  + .p-home-button-example__contents {
+    margin-top: 24px;
+  }
+}
