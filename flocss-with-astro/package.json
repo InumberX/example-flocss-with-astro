@@ -12,7 +12,7 @@
     "sass:dev": "sass src/assets/scss:public/assets/css src/assets/css:public/assets/css --no-source-map --style expanded"
   },
   "dependencies": {
-    "astro": "^2.2.3"
+    "astro": "^2.3.2"
   },
   "prettier": {
     "semi": false,
@@ -21,6 +21,6 @@
     "printWidth": 120
   },
   "devDependencies": {
-    "sass": "^1.62.0"
+    "sass": "^1.62.1"
   }
 }

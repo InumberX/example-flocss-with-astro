@@ -360,6 +360,20 @@ th {
   font-size: 1.5rem;
 }
 
+.p-base-button-list {
+  margin-top: 40px;
+}
+
+.p-base-button-list__items > .p-base-button-list__item:first-of-type {
+  margin-top: 0;
+}
+
+.p-base-button-list__item {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
 .p-home-button-example {
   margin-top: 40px;
 }
@@ -371,6 +385,24 @@ th {
 }
 .p-home-button-example__contents + .p-home-button-example__contents {
   margin-top: 24px;
+}
+
+.p-home-image {
+  margin-top: 40px;
+}
+
+.p-home-image__image {
+  width: 100%;
+}
+
+.p-home-background {
+  width: 100%;
+  height: 400px;
+  margin-top: 40px;
+  background-image: url("../img/img-example-002.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .p-example-button-example {

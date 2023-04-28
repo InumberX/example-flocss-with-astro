@@ -1,0 +1,19 @@
+@use '../../global' as *;
+
+.p-base-button-list {
+  margin-top: 40px;
+}
+
+.p-base-button-list__items {
+  > .p-base-button-list__item {
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+}
+
+.p-base-button-list__item {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
