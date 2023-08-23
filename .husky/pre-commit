@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+cd flocss-with-astro
+
+yarn prettier
+yarn stylelint
+yarn lint:quiet

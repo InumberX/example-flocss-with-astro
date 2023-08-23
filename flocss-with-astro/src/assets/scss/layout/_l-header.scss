@@ -5,7 +5,8 @@
 }
 
 .l-header__text {
-  text-align: center;
-  @include mxGetFontSize(16);
   padding: 24px 0;
+  text-align: center;
+
+  @include mxGetFontSize(16);
 }

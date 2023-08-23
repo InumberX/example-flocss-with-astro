@@ -1,24 +1,25 @@
 @use '../../../global' as *;
 
 .c-base-button:not(:root) {
-  cursor: pointer;
-  text-decoration: none;
-  @include mxGetFontSize(20);
-  display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
   background-color: transparent;
-  position: relative;
-  color: $color-palette-white;
-  font-weight: $font-bold;
   background-color: $color-palette-black;
-  padding: 12px 48px;
-  margin: 0;
-  border-radius: 100px;
   border: 1px solid $color-palette-black;
+  border-radius: 100px;
+  color: $color-palette-white;
+  cursor: pointer;
+  display: flex;
+  font-weight: $font-bold;
+  justify-content: center;
+  margin: 0;
   min-width: 240px;
+  padding: 12px 48px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
   transition: 0.3s color, 0.3s background-color;
+
+  @include mxGetFontSize(20);
 
   @include mxMediaQuerySm {
     min-width: 320px;
@@ -28,10 +29,10 @@
     @include mxGetFontSize(22);
   }
 
-  @include mxMediaHover() {
+  @include mxMediaHover {
     &:hover {
-      color: $color-palette-black;
       background-color: $color-palette-white;
+      color: $color-palette-black;
     }
   }
 }

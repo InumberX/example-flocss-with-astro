@@ -20,6 +20,12 @@ Install the Node.js package.
 docker compose exec node yarn install
 ```
 
+Please enable husky and set up the linter and formatter to run automatically.
+
+```shell
+npx husky install
+```
+
 ### Execution of development tasks
 
 Execute the following command.
@@ -37,6 +43,40 @@ docker compose exec node yarn sass:dev --watch
 ```
 
 - Press "Ctrl + C" to stop
+
+### Syntax Check
+
+```shell
+docker compose exec node yarn lint
+```
+
+### Formatter
+
+#### Check
+
+```shell
+docker compose exec node yarn prettier
+```
+
+#### Check and Format
+
+```shell
+docker compose exec node yarn prettier:fix
+```
+
+### Formatter (SCSS)
+
+#### Check
+
+```shell
+docker compose exec node yarn stylelint
+```
+
+#### Check and Format
+
+```shell
+docker compose exec node yarn stylelint:fix
+```
 
 ### Build
 

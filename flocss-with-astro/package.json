@@ -9,18 +9,28 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "sass:dev": "sass src/assets/scss:public/assets/css src/assets/css:public/assets/css --no-source-map --style expanded"
+    "sass:dev": "sass src/assets/scss:public/assets/css src/assets/css:public/assets/css --no-source-map --style expanded",
+    "lint": "eslint",
+    "lint:quiet": "eslint --quiet",
+    "stylelint": "stylelint 'src/**/*.{css,scss,sass}'",
+    "stylelint:fix": "stylelint --fix 'src/**/*.{css,scss,sass}'",
+    "prettier": "prettier --check 'src/**/*.{js,jsx,ts,tsx,html}'",
+    "prettier:fix": "prettier --write 'src/**/*.{js,jsx,ts,tsx,html}'"
   },
   "dependencies": {
-    "astro": "^2.3.2"
-  },
-  "prettier": {
-    "semi": false,
-    "singleQuote": true,
-    "tabWidth": 2,
-    "printWidth": 120
+    "astro": "^2.10.12"
   },
   "devDependencies": {
-    "sass": "^1.62.1"
+    "eslint": "^8.47.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-n": "^16.0.2",
+    "eslint-plugin-promise": "^6.1.1",
+    "prettier": "^3.0.2",
+    "sass": "^1.66.1",
+    "stylelint": "^15.10.3",
+    "stylelint-config-standard-scss": "^10.0.0",
+    "stylelint-order": "^6.0.3",
+    "stylelint-scss": "^5.1.0"
   }
 }

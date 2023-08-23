@@ -6,5 +6,6 @@
 
 .c-section-title__text {
   text-align: center;
+
   @include mxGetFontSize(24);
 }

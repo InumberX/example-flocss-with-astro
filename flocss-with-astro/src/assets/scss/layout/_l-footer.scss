@@ -2,12 +2,13 @@
 
 .l-footer {
   background-color: $color-palette-black;
-  padding: 24px 0;
   margin-top: auto;
+  padding: 24px 0;
 }
 
 .l-footer__text {
-  text-align: center;
   color: $color-palette-white;
+  text-align: center;
+
   @include mxGetFontSize(12);
 }
