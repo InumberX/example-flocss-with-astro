@@ -1,111 +1,101 @@
 <html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>Example FLOCSS with astro</title>
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=no,shrink-to-fit=no,viewport-fit=cover"
+    />
+    <meta name="description" content="" />
 
-<head>
-  <meta charset="utf-8" />
-  <title>Example FLOCSS with astro</title>
-  <meta name="viewport"
-    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=no,shrink-to-fit=no,viewport-fit=cover" />
-  <meta name="description" content="" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/lib/jquery.min.js" defer></script>
+    <script src="./assets/js/common.js" defer></script>
+  </head>
 
-  <script src="./assets/js/lib/jquery.min.js" defer></script>
-  <script src="./assets/js/common.js" defer></script>
-</head>
-
-<body>
-  <div class="l-wrapper">
-    <header class="l-header">
-      <div class="l-inner">
-        <div class="l-header__container">
-          <p class="l-header__text">
-            ヘッダー
-          </p>
-        </div>
-      </div>
-    </header>
-
-    <main class="l-main">
-      <div class="c-page-title">
+  <body>
+    <div class="l-wrapper">
+      <header class="l-header">
         <div class="l-inner">
-          <div class="c-page-title__container">
-            <h1 class="c-page-title__text">
-              Top
-            </h1>
+          <div class="l-header__container">
+            <p class="l-header__text">ヘッダー</p>
           </div>
         </div>
-      </div>
+      </header>
 
-      <section class="l-section">
-        <div class="c-section-title">
+      <main class="l-main">
+        <div class="c-page-title">
           <div class="l-inner">
-            <div class="c-section-title__container">
-              <h2 class="c-section-title__text">
-                c-base-button
-              </h2>
+            <div class="c-page-title__container">
+              <h1 class="c-page-title__text">Top</h1>
             </div>
           </div>
         </div>
 
-        <div class="p-home-button-example">
-          <div class="l-inner">
-            <div class="p-home-button-example__container">
-              <div class="p-home-button-example__contents">
-                <a href="./example/" class="c-base-button">
-                  <span class="c-base-button__text">
-                    Exampleページへ
-                  </span>
-                </a>
+        <section class="l-section">
+          <div class="c-section-title">
+            <div class="l-inner">
+              <div class="c-section-title__container">
+                <h2 class="c-section-title__text">c-base-button</h2>
               </div>
-
-              <div class="p-home-button-example__contents js-click-example">
-                <button class="c-base-button js-click-example__button">
-                  <span class="c-base-button__text">
-                    buttonタグでもaタグと同じ見た目になるようにする
-                  </span>
-                </button>
-              </div>
-
-              <div class="p-base-button-list">
-                <ul class="p-base-button-list__items">
-                  <li class="p-base-button-list__item">
-                    <button class="c-base-button">
-                      <span class="c-base-button__text">
-                        ボタンリスト
-                      </span>
-                    </button>
-                  </li>
-                  <li class="p-base-button-list__item">
-                    <button class="c-base-button">
-                      <span class="c-base-button__text">
-                        ボタンリスト
-                      </span>
-                    </button>
-                  </li>
-                </ul>
-              </div>
-
-              <figure class="p-home-image">
-                <img src="./assets/img/img-example-001.png" alt="" class="p-home-image__image" />
-              </figure>
-
-              <div class="p-home-background"></div>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
 
-    <footer class="l-footer">
-      <div class="l-inner">
-        <div class="l-footer__container">
-          <p class="l-footer__text">
-            フッター
-          </p>
-        </div>
-      </div>
-    </footer>
-  </div>
-</body>
+          <div class="p-home-button-example">
+            <div class="l-inner">
+              <div class="p-home-button-example__container">
+                <div class="p-home-button-example__contents">
+                  <a href="./example/" class="c-base-button">
+                    <span class="c-base-button__text"> Exampleページへ </span>
+                  </a>
+                </div>
 
+                <div class="p-home-button-example__contents js-click-example">
+                  <button class="c-base-button js-click-example__button">
+                    <span class="c-base-button__text">
+                      buttonタグでもaタグと同じ見た目になるようにする
+                    </span>
+                  </button>
+                </div>
+
+                <div class="p-base-button-list">
+                  <ul class="p-base-button-list__items">
+                    <li class="p-base-button-list__item">
+                      <button class="c-base-button">
+                        <span class="c-base-button__text"> ボタンリスト </span>
+                      </button>
+                    </li>
+                    <li class="p-base-button-list__item">
+                      <button class="c-base-button">
+                        <span class="c-base-button__text"> ボタンリスト </span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+
+                <figure class="p-home-image">
+                  <img
+                    src="./assets/img/img-example-001.png"
+                    alt=""
+                    class="p-home-image__image"
+                  />
+                </figure>
+
+                <div class="p-home-background"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="l-footer">
+        <div class="l-inner">
+          <div class="l-footer__container">
+            <p class="l-footer__text">フッター</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

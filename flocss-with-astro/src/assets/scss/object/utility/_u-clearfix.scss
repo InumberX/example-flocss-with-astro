@@ -1,12 +1,14 @@
 /* clearfix */
 .u-clearfix {
   display: block;
-  &:before,
-  &:after {
+
+  &::before,
+  &::after {
     content: '';
     display: block;
   }
-  &:after {
+
+  &::after {
     clear: both;
   }
 }
